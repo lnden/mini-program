@@ -1,4 +1,4 @@
-//index.js
+// pages/discover/discover.js
 Page({
 
   /**
