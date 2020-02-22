@@ -1,4 +1,6 @@
 <!--index.wxml-->
 <view class="container">
   <swiper></swiper>
+  <button type="primary" bindtap="handleClick" data-url="scroll-switch">横向滚动切换窗口</button>
+  <button type="primary" bindtap="handleClick" data-url="scroll-category">左侧竖形滑动菜单</button>
 </view>

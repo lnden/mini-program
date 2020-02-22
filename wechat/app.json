@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/discover/discover",
     "pages/personal/personal",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/feature/scroll-switch/scroll-switch",
+    "pages/feature/scroll-category/scroll-category"
   ],
   "window": {
     "backgroundTextStyle": "light",
