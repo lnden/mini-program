@@ -1,0 +1,14 @@
+/* pages/feature/qr-code/qr-code.wxss */
+
+.al-mainInner button {
+  width: 100%;
+}
+
+.local-image {
+  text-align: center;
+}
+
+.qr-code {
+  width: 200rpx;
+  height: 200rpx;
+}

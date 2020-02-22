@@ -1,0 +1,57 @@
+<!--pages/feature/canvas-share/canvas-share.wxml-->
+<view class="al-mainInner">
+  <view class="al-title">描述</view>
+  <view class="al-content">
+    <view>微信小程序把结果页面保存图片保存到本地执行如下步骤</view>
+    <view>1、使用 canvas 把页面布局画在空白画布上</view>
+    <view>2、把当前画布指定区域的内容导出生成指定大小的图片</view>
+    <view>3、保存图片到系统相册</view>
+  </view>
+  <view class="al-title">问题</view>
+  <view class="al-content">
+    <view>1、canvas 画布宽高自适应屏幕问题</view>
+    <view>2、canvas 字体加粗问题</view>
+    <view>3、canvas 画字文字这样问题</view>
+    <view>4、图片保存到系统相册不清楚问题</view>
+    <view>5、同一行文字两种颜色问题</view>
+  </view>
+
+  <button class="cert-btn" bindtap="switchMask">查看捐赠证书</button>
+  <!-- 灰色蒙层 -->
+  <view class="cert-mask" hidden="{{isShow}}">
+    <!-- 证书区域start -->
+    <view class="cert-content">
+      <!-- 关闭按钮 -->
+      <view class="close-btn" bindtap="switchMask">
+        <image src="{{close}}" />
+      </view>
+      <!-- 内容背景图start -->
+      <view class="cert-info">
+        <view class="info-content">
+          <view class="cert-title">捐赠证书</view>
+          <view class="cert-num">捐赠证书编号：LO1234567890</view>
+          <view class="cert-name">
+            <open-data type="userNickName"></open-data>
+          </view>
+          <view class="cert-line"></view>
+          <view class="cert-text">你为 [ {{donateName}} ] 贡献了一份爱心，感谢你的支持。</view>
+          <view class="cert-text cert-define">自定义文案自定义文案自定义文案自定义文案自定义文案自定义文案</view>
+          <view class="cert-organ">
+            <view class="organ-logo">
+              <image src="{{seal}}"></image>
+            </view>
+            <view class="organ-info">
+              <view class="organ-name">{{organName}}</view>
+              <view class="organ-name organ-time">{{time}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 内容背景图end -->
+    </view>
+    <!-- 证书区域end -->
+    <view class="btn-pic" bindtap="saveImage">保存图片</view>
+  </view>
+
+  <canvas canvas-id="share" style="width:1000px;height:1500px;position:fixed;left:9000px" hidden="{{canvasHidden}}"></canvas>
+</view>

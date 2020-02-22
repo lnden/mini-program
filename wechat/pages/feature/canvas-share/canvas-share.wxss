@@ -1,0 +1,166 @@
+/* pages/feature/canvas-share/canvas-share.wxss */
+
+.cert-btn {
+  background: red;
+  color: #fff;
+  position: absolute;
+  bottom: 300rpx;
+  left: 0;
+  right: 0;
+}
+
+.cert-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 60rpx;
+}
+
+.cert-content {
+  position: relative;
+  width: 600rpx;
+  height: 874rpx;
+  background: #f2ebdd;
+}
+
+/* 设置关闭按钮 */
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48rpx;
+  height: 48rpx;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.close-btn image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 里面背景图片盒子 */
+
+.cert-info {
+  position: relative;
+  width: 568rpx;
+  height: 790rpx;
+  background-image: url('http://m.qpic.cn/psb?/V14PQoKx1VMZ0X/h824amBgO3kFpDhoBYF6G1HST5AwziotN4Jh.W02XTg!/b/dAcBAAAAAAAA&bo=1gL2AwAAAAADJyM!&rf=viewer_4');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 44rpx 16rpx;
+  text-align: center;
+}
+
+.info-content {
+  padding: 20rpx 60rpx;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cert-title {
+  font-size: 96rpx;
+  color: #845f1f;
+  font-weight: bold;
+  margin-top: 50rpx;
+}
+
+.cert-num {
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #404040;
+  margin-top: 2rpx;
+}
+
+.cert-name {
+  font-size: 48rpx;
+  color: #404040;
+  margin-top: 30rpx;
+  height: 60rpx;
+}
+
+.cert-line {
+  width: 336rpx;
+  height: 4rpx;
+  background: #d6a56f;
+  margin: 11.5rpx auto;
+}
+
+.cert-text {
+  font-size: 30rpx;
+  color: #404040;
+  text-align: justify;
+  line-height: 38rpx;
+  margin-top: 24.5rpx;
+  height: 110rpx;
+}
+
+.cert-define {
+  margin-top: 34rpx;
+  height: 60rpx;
+}
+
+.cert-organ {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 167rpx;
+  margin-top: 28rpx;
+}
+
+.organ-logo {
+  position: absolute;
+  width: 167rpx;
+  height: 167rpx;
+  padding-right: 25px;
+}
+
+.organ-logo image {
+  width: 100%;
+  height: 100%;
+}
+
+.organ-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.organ-name {
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #263238;
+  line-height: 45rpx;
+}
+
+.organ-time {
+  margin-top: 8rpx;
+}
+
+/* 保存图片按钮 */
+
+.btn-pic {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #c80202;
+  text-align: center;
+  background: #fff;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 120rpx;
+}

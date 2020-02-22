@@ -1,0 +1,18 @@
+<!--pages/feature/qr-code/qr-code.wxml-->
+<view class="al-mainInner">
+  <view class="al-title">描述</view>
+  <view class="al-content">
+    <view>1、项目详情分享页面二维码分享，二维码为动态生成，生成二维码需要服务端生成，前端需要传递相关路径，后台使用哪种生成方式根据当前需求确定</view>
+    <view>2、由于服务端返回格式为 base64 编码，前端需要单独处理才能展示画在图片上生成海报或者本地展示。本 demo 为获取二维码以及前端展示生成的详细展示</view>
+  </view>
+  <view class="al-title">描述</view>
+  <view class="al-content">
+    <view>1、后台使用第一种方式返回正方形二维码，更换第二种方式为圆形小程序码</view>
+    <view>2、查看后台返回的base64字符串是否需要截取</view>
+  </view>
+
+  <button type="primary" bindtap="sendRequest">发送请求获取相应二维码</button>
+  <view class="local-image">
+    <image class="qr-code" src="{{LocalImage}}"></image>
+  </view>
+</view>

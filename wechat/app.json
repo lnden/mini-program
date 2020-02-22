@@ -6,7 +6,9 @@
     "pages/personal/personal",
     "pages/message/message",
     "pages/feature/scroll-switch/scroll-switch",
-    "pages/feature/scroll-category/scroll-category"
+    "pages/feature/scroll-category/scroll-category",
+    "pages/feature/canvas-share/canvas-share",
+    "pages/feature/qr-code/qr-code"
   ],
   "window": {
     "backgroundTextStyle": "light",

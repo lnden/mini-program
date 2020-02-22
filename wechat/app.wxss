@@ -1,1 +1,21 @@
 /**app.wxss**/
+
+/* pages/feature public style */
+
+.al-mainInner {
+  padding: 0 20rpx;
+}
+
+.al-title {
+  font-weight: bold;
+  font-size: 40rpx;
+  color: #868686;
+  border-bottom: 4rpx solid #868686;
+  padding-bottom: 10rpx;
+  margin: 10rpx auto;
+}
+
+.al-content {
+  color: #868686;
+  margin: 10rpx auto;
+}
