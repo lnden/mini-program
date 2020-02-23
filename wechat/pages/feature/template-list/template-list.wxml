@@ -1,0 +1,8 @@
+<!--pages/feature/template-list/template-list.wxml-->
+<import src="../../../template/alphaSearch/alphaSearch.wxml" />
+
+<!-- 国内学校列表，选择时显示
+<template wx:if="{{school.show}}" is="schoolSearch" data="{{letter:school.letter,toId:school.toId,dataList:school.dataList}}"></template> -->
+
+<!-- 电话国家列表，选择时显示 -->
+<template wx:if="{{telCountry.show}}" is="telCountry" data="{{letter:telCountry.letter,toId:telCountry.toId,dataList:telCountry.dataList}}"></template>

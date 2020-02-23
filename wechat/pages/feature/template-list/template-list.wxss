@@ -1,0 +1,2 @@
+/* pages/feature/template-list/template-list.wxss */
+@import "../../../template/alphaSearch/alphaSearch.wxss";

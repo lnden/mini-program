@@ -9,7 +9,8 @@
     "pages/feature/scroll-category/scroll-category",
     "pages/feature/canvas-share/canvas-share",
     "pages/feature/qr-code/qr-code",
-    "pages/feature/payment/payment"
+    "pages/feature/payment/payment",
+    "pages/feature/template-list/template-list"
   ],
   "window": {
     "backgroundTextStyle": "light",

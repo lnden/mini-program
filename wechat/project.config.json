@@ -52,6 +52,13 @@
 					"id": -1,
 					"name": "pages/feature/scroll-switch/scroll-switch",
 					"pathName": "pages/feature/scroll-switch/scroll-switch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "template/alphaSearch/alphaSearch",
+					"pathName": "template/alphaSearch/alphaSearch",
 					"scene": null
 				}
 			]

@@ -1,0 +1,33 @@
+<!--template/alphaSearch/alphaSearch.wxml-->
+
+
+<!-- 搜索手机号地区 -->
+<template name="telCountry">
+  <scroll-view class="alphaSearch" scroll-y scroll-with-animation scroll-into-view="{{toId}}">
+    <view wx:for="{{dataList}}" wx:for-index="idx" wx:key="idx">
+      <view class='title'>{{item.letter}}</view>
+      <view class='con' wx:for="{{item.list}}" wx:for-item="list" wx:key="*this">
+        <view bindtap='selectTel' data-pattern="{{list.pattern}}" data-zone="{{list.zone}}" data-text="{{list.text}}">{{list.text}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='slider-nav'>
+    <view wx:for="{{letter}}" wx:key="*this" bindtap='searchTel' data-text="{{item}}">{{item}}</view>
+  </view>
+</template>
+
+<!-- 搜索纯文本学校 -->
+<template name="schoolSearch">
+  <scroll-view class="alphaSearch" scroll-y scroll-with-animation scroll-into-view="{{toId}}">
+    <view wx:for="{{dataList}}" wx:for-index="idx" wx:key="idx">
+      <view class='title'>{{item.other?item.other:item.letter}}</view>
+      <view class='con' wx:for="{{item.list}}" wx:for-item="list" wx:key="list">
+        <view bindtap='selectSchool' data-text='{{list}}'>{{list}}</view>
+      </view>
+    </view>
+    <view class='cancel' bindtap='cancelSelect'>取消</view>
+  </scroll-view>
+  <view class='slider-nav'>
+    <view wx:for="{{letter}}" wx:key="letter" bindtap='searchSchool' data-text="{{item}}">{{item}}</view>
+  </view>
+</template>Î

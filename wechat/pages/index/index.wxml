@@ -6,4 +6,5 @@
   <button type="primary" bindtap="handleClick" data-url="canvas-share">保存图片</button>
   <button type="primary" bindtap="handleClick" data-url="payment">微信支付</button>
   <button type="primary" bindtap="handleClick" data-url="qr-code">获取二维码</button>
+  <button type="primary" bindtap="handleClick" data-url="template-list">模版列表</button>
 </view>
