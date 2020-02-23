@@ -1,0 +1,40 @@
+<!--components/pay-layer/pay-layer.wxml-->
+<view class="common_pay_box" wx:if="{{showModal}}" catchtouchmove="{{showModal?'truen':''}}">
+  <view class="pay_box_title">
+    <image class="avatar" src="{{payInfo.picImg}}" mode="scaleToFill"></image>
+    <text class="sub">{{payInfo.title}}</text>
+    <image class="icons" src="../../images/cancel.png" bindtap="hideModal" mode="scaleToFill"></image>
+    <text class="showMoney" style="color:{{colors}}">￥<text>{{money}}</text></text>
+  </view>
+
+  <view class="pay_box_line" />
+
+  <view class="pay_box_moeny">
+    <view class="box_moeny_show">
+      <button bindtap="handleClickTab" class="{{9.9==money?'active':''}}" data-value="9.9">￥9.9</button>
+      <button bindtap="handleClickTab" class="{{39==money?'active':''}}" data-value="39">￥39</button>
+      <button bindtap="handleClickTab" class="{{99==money?'active':''}}" data-value="99">￥99</button>
+    </view>
+    <view class="box_moeny_btn">
+      <button class="{{focus?'actives':''}}">
+        <input bindfocus="isFocus" bindblur="isFocus" type="digit" placeholder="{{placeholder}}" bindinput="handleChange" maxlength="5" value="{{moneyValue}}"></input>
+      </button>
+    </view>
+  </view>
+
+  <view class="pay_box_agreement">
+    <view class="box_agreement_item">
+      <view class="{{isAgreement?'item_icons active':'item_icons'}}" bindtap="handleSwitch" data-state="isAgreement"></view>
+      <view>同意
+        <text class="to_content" bindtap="handleClickTo">用户协议</text> 和
+        <text class="to_content" bindtap="handleClickTo"> 委托代扣协议</text>（可随时取消）</view>
+    </view>
+    <view class="box_agreement_item">
+      <view class="{{isAnon?'item_icons active':'item_icons'}}" bindtap="handleSwitch" data-state="isAnon"></view>
+      <text>匿名捐助</text>
+    </view>
+    <view>该笔流水由xxx捐给xxx慈善总会</view>
+  </view>
+
+  <button class="ensure" bindtap="handleClickEnsure">确定</button>
+</view>

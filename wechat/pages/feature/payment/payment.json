@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "public-mask": "/components/public-mask/public-mask",
+    "pay-layer": "/components/pay-layer/pay-layer"
+  }
+}

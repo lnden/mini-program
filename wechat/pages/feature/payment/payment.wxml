@@ -1,0 +1,19 @@
+<!--pages/feature/payment/payment.wxml-->
+<view class="al-mainInner">
+  <view class="al-title">描述</view>
+  <view class="al-content">
+    <view>微信小程序拉取微信支付需要执行如下步骤</view>
+    <view>1、调用【统一下单】接口，在微信支付服务后台生成预支付交易单，返回正确的预支付交易后调起支付。</view>
+    <view>2、调用 wx.requestPayment({}) 拉取微信支付功能，此处尤为重要，Android会直接拉取微信原生支付框输入密码验证支付是否成功状态，IOS则会跳转到Safari进行支付，返回微信无法获取支付状态，这时候需要请求后台接口进行判断是否请求成功，成功跳转到支付成功页面，失败跳转到自定义页面</view>
+    <view>3、该demo请求统一下单接口为数据中台提供，相关秘钥以及加密在中台处理返回给前端，前端直接使用对应参数拉取微信支付请求</view>
+  </view>
+  <view class="al-title">问题</view>
+  <view class="al-content">
+    <view>1、联调微信支付过程中，需要和服务端沟通好，加密在前台还是后台处理</view>
+    <view>2、支付过程中出现"下单账号与支付账号不一致"报错信息，因统一下单的 openid 和调起支付的 openid 不一致造成</view>
+  </view>
+
+  <button type="primary" bindtap="handleConfirmPay">立即支付</button>
+  <pay-layer showModal="{{showModalStatus}}" payInfo="{{payInfo}}" bind:sendState="onGetState"></pay-layer>
+  <public-mask showModal="{{showModalStatus}}"></public-mask>
+</view>

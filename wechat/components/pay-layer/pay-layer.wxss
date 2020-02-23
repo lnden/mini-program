@@ -1,0 +1,192 @@
+/* components/pay-layer/pay-layer.wxss */
+
+/*对话框 */
+
+.common_pay_box {
+  height: 786rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding: 26rpx 32rpx 41rpx 32rpx;
+  box-sizing: border-box;
+}
+
+/* 对话框头部内容 */
+
+.common_pay_box .pay_box_title .avatar {
+  width: 218rpx;
+  height: 160rpx;
+  margin-right: 24rpx;
+  vertical-align: top;
+}
+
+.common_pay_box .pay_box_title .sub {
+  width: 379rpx;
+  display: inline-block;
+  font-size: 32rpx;
+  color: #404040;
+  line-height: 45rpx;
+}
+
+.common_pay_box .pay_box_title .icons {
+  vertical-align: top;
+  width: 45rpx;
+  height: 45rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  float: right;
+}
+
+.common_pay_box .pay_box_title .showMoney {
+  font-family: PingFangSC-Regular;
+  color: #df2413;
+  font-size: 32rpx;
+  line-height: 32px;
+  float: left;
+  margin-left: 240rpx;
+  margin-top: -60rpx;
+}
+
+.common_pay_box .pay_box_title .showMoney text {
+  font-size: 64rpx;
+  line-height: 64rpx;
+  font-family: Helvetica;
+}
+
+/* 分割线 */
+
+.common_pay_box .pay_box_line {
+  width: 686rpx;
+  height: 1rpx;
+  background: #eceff1;
+  margin: 32rpx 0;
+  padding: auto 32rpx;
+}
+
+/* 对话框金额选择*/
+
+.common_pay_box .pay_box_moeny {
+  overflow: hidden;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_show {
+  margin-bottom: 24rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_show button {
+  width: 208rpx;
+  float: left;
+  height: 64rpx;
+  line-height: 64rpx;
+  color: #868686;
+  border: 2rpx solid #e5e5e5;
+  border-radius: 8rpx;
+  background: #f9f9f9;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_show button.active {
+  background: #c80202;
+  color: #fff;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_btn {
+  overflow: hidden;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_btn button {
+  width: 685rpx;
+}
+
+.common_pay_box .pay_box_moeny .box_moeny_btn button.actives {
+  border: 2rpx solid #c80202;
+  background: #ffecec;
+}
+
+/* 对话框协议内容 */
+
+.common_pay_box .pay_box_agreement {
+  font-size: 24rpx;
+  color: #868686;
+  margin-top: 44rpx;
+}
+
+.common_pay_box .pay_box_agreement .box_agreement_item {
+  margin: 15rpx 0rpx;
+  line-height: 38rpx;
+  height: 38rpx;
+  position: relative;
+}
+
+.box_agreement_item view {
+  display: inline-block;
+}
+
+.box_agreement_item .item_icons {
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin-right: 8rpx;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2rpx solid #868686;
+  position: relative;
+}
+
+.box_agreement_item .item_icons.active {
+  background-color: #c80202;
+  border: 2rpx solid transparent;
+}
+
+.box_agreement_item .active::before, .box_agreement_item .active::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  border: 1px solid;
+  background-color: white;
+}
+
+.box_agreement_item .item_icons.active::before {
+  width: 2rpx;
+  height: 2rpx;
+  left: 25%;
+  top: 50%;
+  transform: skew(0deg, 50deg);
+}
+
+.box_agreement_item .item_icons.active::after {
+  width: 6rpx;
+  height: 2rpx;
+  left: 45%;
+  top: 42%;
+  transform: skew(0deg, -50deg);
+}
+
+.box_agreement_item .to_content {
+  color: #404040;
+  font-size: 24rpx;
+  text-decoration: underline;
+}
+
+.common_pay_box .ensure {
+  width: 686rpx;
+  height: 96rpx;
+  background: #c80202;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  margin: 35rpx 0;
+  font-weight: 400;
+  line-height: 45rpx;
+  padding: 24rpx 0;
+}

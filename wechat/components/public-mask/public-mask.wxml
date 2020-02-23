@@ -1,0 +1,2 @@
+<!--components/public-mask/public-mask.wxml-->
+<view class="{{showModal?'public_screen':''}}" catchtouchmove="{{showModal?'truen':''}}"></view>
